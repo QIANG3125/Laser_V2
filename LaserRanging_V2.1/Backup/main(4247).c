@@ -906,7 +906,7 @@ void gen_task(void * pdata)
 			}
 
 			
-			distance=(1.5 * (double) time_ps) / 10000;
+			
 			//将有效数据计算原始距离并存入一个结构体数组中
 			if(data_vaild == 1)
 			{
@@ -1046,11 +1046,11 @@ void gen_task(void * pdata)
 							}
 					
 					}
-				else	//增益大于适合的增益,回波被放大,TDC会读取两个数据
+				else	//看看有没有,有再说
 					{
 						OS_ENTER_CRITICAL();
 						printf("2vaild_data!.  ");
-//						printf("1:%.3f.  2:%.3f.\n",vaild_Measuredata[0].distance,vaild_Measuredata[1].distance);
+						printf("1:%.3f.  2:%.3f.\n",vaild_Measuredata[0].distance,vaild_Measuredata[1].distance);
 						OS_EXIT_CRITICAL();
 
 						if(quantify>1600 && vaild_Measuredata[1].distance <100 && mcb.measure_mode==wall)	//	滤除雾霾天气下的前级干扰
