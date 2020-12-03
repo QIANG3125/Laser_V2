@@ -181,7 +181,7 @@ extern INT8U 			first_measure;		//是否是第一次测量
 #define QUANTIFY_INIT			1100  //初始化增益值 DAC
 #define START_THREAD			80			
 #define STOP_THREAD1			60		//原60
-#define STOP_THREAD2			217			//判断是否饱和
+#define STOP_THREAD2			210			//判断是否饱和
 #define STOP_THREAD3			80		//原80
 
 /* 数据筛选校准参数 */
